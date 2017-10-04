@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ejercicio4"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/introducedni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce el dni"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/dni"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introducedni"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/guiondni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_below="@id/introducedni"
+        android:layout_toEndOf="@+id/dni" />
+
+    <EditText
+        android:id="@+id/letra"
+        android:layout_height="wrap_content"
+        android:layout_width="150px"
+        android:layout_below="@id/introducedni"
+        android:layout_toRightOf="@id/guiondni"
+        />
+
+    <Button
+        android:id="@+id/btnValidar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validar"
+        android:layout_below="@+id/dni"
+        android:layout_alignParentStart="true"
+        android:onClick="Validar"/>
+
+    <TextView
+        android:id="@+id/validaciondni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnValidar"
+        android:text="Pulsa Validar"/>
+
+
+
+
+
+   </RelativeLayout>

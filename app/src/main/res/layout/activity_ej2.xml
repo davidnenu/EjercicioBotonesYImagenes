@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ejercicio2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/n1"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:paddingTop="50px"
+        android:text="Introduce PRIMER valor:"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/valor1"
+        android:background="#ff1ca5ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+
+        android:layout_below="@id/n1" />
+
+    <TextView
+        android:id="@+id/n2"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:paddingTop="50px"
+        android:text="Introduce SEGUNDO valor:"
+        android:layout_below="@id/valor1"/>
+
+    <EditText
+        android:id="@+id/valor2"
+        android:background="#ff1ca5ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_below="@id/n2"/>
+
+        <RelativeLayout
+            android:id="@+id/botonera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/valor2">
+
+            <Button
+                android:id="@+id/botonmas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mas"
+                android:onClick="calcular"
+                android:layout_marginTop="50px"
+                />
+
+            <Button
+                android:id="@+id/botonmenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menos"
+                android:onClick="calcular"
+                android:layout_marginTop="50px"
+                android:layout_toRightOf="@id/botonmas"/>
+
+            <Button
+                android:id="@+id/botonmultiplicar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multiplicar"
+                android:onClick="calcular"
+                android:layout_marginTop="50px"
+                android:layout_toRightOf="@id/botonmenos"/>
+
+            <Button
+                android:id="@+id/botondividir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dividir"
+                android:onClick="calcular"
+                android:layout_marginTop="50px"
+                android:layout_toRightOf="@id/botonmultiplicar"/>
+
+
+
+        </RelativeLayout>
+
+
+    <TextView
+
+        android:id="@+id/lblresul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50px"
+        android:text="Resultado:"
+        android:layout_below="@id/botonera"/>
+
+    <TextView
+        android:id="@+id/resul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px"
+        android:textSize="150px"
+        android:layout_below="@id/lblresul"/>
+
+
+</RelativeLayout>

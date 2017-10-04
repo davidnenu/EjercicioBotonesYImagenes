@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ejercicio3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF00">
+
+    <ToggleButton android:id="@+id/BtnSW1"
+        android:textOn="@string/amarillo"
+        android:textOff="@string/amarillo"
+        android:checked="true"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:onClick="Cambiar"/>
+
+    <ToggleButton android:id="@+id/BtnSW2"
+        android:textOn="@string/gris"
+        android:textOff="@string/gris"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/BtnSW1"
+        android:onClick="Cambiar"/>
+
+
+    </RelativeLayout>

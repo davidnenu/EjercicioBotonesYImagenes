@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EjercicioBotonesYImagenes</string>
+    <string name="calcular">Calcular</string>
+    <string name="title_activity_ej2">Ej2</string>
+    <string name="mas">+</string>
+    <string name="menos">-</string>
+    <string name="multiplicar">*</string>
+    <string name="dividir">/</string>
+    <string name="amarillo">Amarillo</string>
+    <string name="gris">Gris</string>
+</resources>

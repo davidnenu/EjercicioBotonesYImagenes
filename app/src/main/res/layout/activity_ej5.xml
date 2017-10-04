@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:stretchColumns="*"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ejercicio5"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TableRow >
+
+        <Button
+            android:id="@+id/btnYAHOO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YAHOO" />
+
+        <Button
+            android:id="@+id/btnBING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnYAHOO"
+            android:text="BING" />
+
+        <Button
+            android:id="@+id/btnGOOGLE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnBING"
+            android:text="GOOGLE" />
+
+    </TableRow>
+
+
+    </TableLayout>
