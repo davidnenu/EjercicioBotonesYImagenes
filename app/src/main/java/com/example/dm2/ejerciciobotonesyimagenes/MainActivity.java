@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button ej3;
     private Button ej4;
     private Button ej5;
+    private Button ej6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +69,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this,Ej5.class);
+                startActivity(intent);
+
+            }
+        });
+
+        ej6=(Button)findViewById(R.id.ej6);
+
+        ej6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this,Ej6.class);
                 startActivity(intent);
 
             }

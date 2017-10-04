@@ -23,7 +23,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Ej3" />
         <activity android:name=".Ej4" />
-        <activity android:name=".Ej5"></activity>
+        <activity android:name=".Ej5" />
+        <activity android:name=".Ej6"></activity>
     </application>
 
 </manifest>

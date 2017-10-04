@@ -12,23 +12,38 @@
             android:id="@+id/btnYAHOO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="YAHOO" />
+            android:text="YAHOO"
+            android:onClick="imagen"/>
 
         <Button
             android:id="@+id/btnBING"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/btnYAHOO"
-            android:text="BING" />
+            android:text="BING"
+            android:onClick="imagen"/>
 
         <Button
             android:id="@+id/btnGOOGLE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/btnBING"
-            android:text="GOOGLE" />
+            android:text="GOOGLE"
+            android:onClick="imagen"/>
 
     </TableRow>
+
+
+        <ImageView
+            android:id="@+id/imagenNavegador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:maxHeight="100px"
+            android:maxWidth="100px"
+
+            />
+
 
 
     </TableLayout>
