@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:onClick="mostrarSwitch"
             />
 
     </LinearLayout>
@@ -42,7 +43,8 @@
             android:id="@+id/switch2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="false" />
+            android:checked="false"
+            android:onClick="mostrarSwitch"/>
 
     </LinearLayout>
 
@@ -66,6 +68,7 @@
             android:checked="true"
             android:textOff="No"
             android:textOn="Sí"
+            android:onClick="mostrarToggle"
 
             />
 
@@ -90,41 +93,42 @@
         android:layout_height="wrap_content"
         android:textOn="Sí"
         android:textOff="No"
-
+        android:onClick="mostrarToggle"
         android:checked="false" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/controles22">
+
         <ImageView
             android:id="@+id/camara1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxHeight="100px"
-            android:maxWidth="100px"
-            android:onClick="mostrar"/>
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:src="@drawable/camara" />
+
         <ImageView
             android:id="@+id/luz1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxHeight="100px"
-            android:maxWidth="100px"
-            android:onClick="mostrar"/>
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/luz" />
+
         <ImageView
             android:id="@+id/camara2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxHeight="100px"
-            android:maxWidth="100px"
-            android:onClick="mostrar"/>
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:src="@drawable/camara" />
+
         <ImageView
             android:id="@+id/luz2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxHeight="100px"
-            android:maxWidth="100px"
-            android:onClick="mostrar"/>
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:src="@drawable/luz" />
 
     </LinearLayout>
 
